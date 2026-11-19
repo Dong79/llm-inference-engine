@@ -1,0 +1,6 @@
+build*/
+tests/data/
+bench_results/
+models/
+__pycache__/
+*.bin

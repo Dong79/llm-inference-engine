@@ -1,0 +1,26 @@
+model        Qwen2ForCausalLM, 494.033M params, 24 layers, 14/2 q/kv heads, head_dim 64
+device       cuda:0, bfloat16
+kv cache     99407 blocks x 16 tokens = 19.5442 GB (12288 bytes/token)
+max len      32768 tokens
+scheduler    static batching (baseline), max_num_seqs 128, token budget 2048, chunked prefill
+prefix cache on
+attention    CUDA paged-attention kernel (decode)
+chat format  chatml
+listening on http://127.0.0.1:8123
+[engine] running 1 | waiting 0 | gen 0.1 tok/s | kv used 0.0% | prefix hit 0.0% | preempted 0
+[engine] running 47 | waiting 388 | gen 3809.5 tok/s | kv used 1.2% | prefix hit 0.0% | preempted 0
+[engine] running 7 | waiting 465 | gen 1843.1 tok/s | kv used 0.4% | prefix hit 0.0% | preempted 0
+[engine] running 52 | waiting 383 | gen 3780.4 tok/s | kv used 1.3% | prefix hit 0.0% | preempted 0
+[engine] running 5 | waiting 461 | gen 1839.2 tok/s | kv used 0.2% | prefix hit 0.0% | preempted 0
+[engine] running 53 | waiting 382 | gen 3978.3 tok/s | kv used 1.3% | prefix hit 0.0% | preempted 0
+[engine] running 4 | waiting 460 | gen 1440.2 tok/s | kv used 0.2% | prefix hit 0.0% | preempted 0
+[engine] running 46 | waiting 386 | gen 3800.8 tok/s | kv used 1.1% | prefix hit 0.0% | preempted 0
+[engine] running 3 | waiting 467 | gen 1295.4 tok/s | kv used 0.2% | prefix hit 0.0% | preempted 0
+[engine] running 46 | waiting 359 | gen 3314.1 tok/s | kv used 1.1% | prefix hit 0.2% | preempted 0
+[engine] running 7 | waiting 359 | gen 1564.2 tok/s | kv used 0.4% | prefix hit 0.2% | preempted 0
+[engine] running 51 | waiting 231 | gen 3345.6 tok/s | kv used 1.0% | prefix hit 0.6% | preempted 0
+[engine] running 10 | waiting 231 | gen 1979.2 tok/s | kv used 0.5% | prefix hit 0.6% | preempted 0
+[engine] running 55 | waiting 103 | gen 2731.1 tok/s | kv used 1.0% | prefix hit 0.8% | preempted 0
+[engine] running 7 | waiting 103 | gen 1771.5 tok/s | kv used 0.4% | prefix hit 0.8% | preempted 0
+[engine] running 57 | waiting 0 | gen 1307.8 tok/s | kv used 0.8% | prefix hit 0.8% | preempted 0
+[engine] running 12 | waiting 0 | gen 2189.3 tok/s | kv used 0.6% | prefix hit 0.8% | preempted 0

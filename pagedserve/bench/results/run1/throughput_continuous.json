@@ -1,0 +1,23 @@
+{
+  "scenario": "throughput",
+  "workload": "sharegpt",
+  "output_len_p50": 148,
+  "output_len_p95": 629,
+  "output_len_max": 872,
+  "requests": 1000,
+  "duration_s": 32.26223190300516,
+  "input_tokens": 217393,
+  "output_tokens": 201847,
+  "output_tokens_per_s": 6256.4487356870795,
+  "requests_per_s": 30.995995658528887,
+  "ttft_p50_ms": 10113.002583006164,
+  "ttft_p95_ms": 20291.92259599222,
+  "ttft_p99_ms": 21075.535255979048,
+  "tpot_mean_ms": 15.43452534420121,
+  "e2e_p50_s": 12.685079575021518,
+  "e2e_p95_s": 24.5189015220094,
+  "server_steps": 2159,
+  "avg_tokens_per_step": 193.35247799907364,
+  "preemptions": 0,
+  "avg_decode_batch": 93.49096804075961
+}

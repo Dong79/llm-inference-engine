@@ -1,0 +1,11 @@
+model        Qwen2ForCausalLM, 494.033M params, 24 layers, 14/2 q/kv heads, head_dim 64
+device       cuda:0, bfloat16
+kv cache     99407 blocks x 16 tokens = 19.5442 GB (12288 bytes/token)
+max len      32768 tokens
+scheduler    continuous batching, max_num_seqs 128, token budget 2048, chunked prefill
+prefix cache off
+attention    CUDA paged-attention kernel (decode)
+chat format  chatml
+listening on http://127.0.0.1:8123
+[engine] running 62 | waiting 0 | gen 1211.0 tok/s | kv used 6.7% | prefix hit 0.0% | preempted 0
+[engine] running 59 | waiting 3 | gen 2238.4 tok/s | kv used 7.5% | prefix hit 0.0% | preempted 0
