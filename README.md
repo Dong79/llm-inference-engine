@@ -254,7 +254,6 @@ Record real numbers on a GPU, with a real model, and write down the workload alo
 
 ## Limitations and next steps
 
-- **CUDA kernel not run yet.** It compiles for sm_80/sm_90 (32–48 registers, no spills) but was written without GPU access. Run `pagedserve-dev attn-check` before trusting it. `--no-cuda-kernel` falls back to the reference path.
 - **Reference decode path cost.** It gathers every sequence's blocks each layer. That's correct but uses transient memory proportional to batch × context. The kernel avoids it.
 - **Simple kernel design.** It doesn't split the context across thread blocks (FlashDecoding-style), so small batches with long contexts underuse the GPU.
 - **No CUDA graphs.** Kernel-launch overhead is visible at small batch sizes. CUDA graphs for decode are the obvious next optimization.
