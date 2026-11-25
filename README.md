@@ -1,5 +1,6 @@
 # llm-inference-engine
 
+![CI](https://github.com/Dong79/pagedserve/actions/workflows/ci.yml/badge.svg)
 An OpenAI-compatible LLM inference server in C++20 and LibTorch, built around the ideas behind vLLM:
 
 - **Iteration-level continuous batching** with chunked prefill and a per-step token budget
